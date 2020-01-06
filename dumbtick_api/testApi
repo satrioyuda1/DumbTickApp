@@ -1,0 +1,69 @@
+### SIGNUP 
+POST http://localhost:5000/api/v1/signup/ 
+Content-Type: application/json
+
+{
+"name" : "Siunix", "email" : "abd.siunix@gmail.com","phone":"08133333", "username" : "siunix", "password" : "siunix", "image":"http://","role":"users"
+}
+
+### SIGN POST
+ POST http://localhost:5000/api/v1/login/ 
+Content-Type: application/json
+
+{
+"username" : "dimasbaik",
+"email":"dimas@gmail.com", 
+"password" : "12345"
+}
+### Search event
+ GET  http://localhost:5000/api/v1/events?title=r 
+Content-Type: application/json
+
+###
+ GET  http://localhost:5000/api/v1/event/6 
+Content-Type: application/json
+
+###post events
+
+POST http://localhost:5000/api/v1/event
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJkaW1hc2JhaWsiLCJpYXQiOjE1Nzc2NDUzOTN9.DzfxjVWdyM03Lt7qW81xtg54JO-sNkwtA4PlWP3J3FU
+
+{
+  "title": "DBL",
+  "categoryId": 1,
+  "startTime": "2019-12-2923:51:41",
+  "endTime": "2019-12-2923:51:41",
+  "price": "25000",
+  "description": "horeeeee",
+  "address": "tangsel",
+  "urlMap": "http:",
+  "image": "https://picsum.photos/200/300",
+  "createdBy":2
+}
+
+
+# ###delete event
+
+# DELETE http://localhost:5000/api/v1/event/21
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJkaW1hc2JhaWsiLCJpYXQiOjE1Nzc2NDUzOTN9.DzfxjVWdyM03Lt7qW81xtg54JO-sNkwtA4PlWP3J3FU
+
+# ###
+
+# PATCH  http://localhost:5000/api/v1/event/21
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJkaW1hc2JhaWsiLCJpYXQiOjE1Nzc2NDUzOTN9.DzfxjVWdyM03Lt7qW81xtg54JO-sNkwtA4PlWP3J3FU
+
+# {
+#   "title": "Persija vs Persekab",
+#   "categoryId": 1,
+#   "startTime": "2019-12-29 23:51:41",
+#   "endTime": "2019-12-29 23:51:41",
+#   "price": "25000",
+#   "description": "horeeeee",
+#   "address": "tangsel",
+#   "urlMaps": "http:",
+#   "img": "https://picsum.photos/200/300",
+#   "createdBy":2
+# }

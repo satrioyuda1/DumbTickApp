@@ -1,0 +1,17 @@
+//Get categories from api
+export const GET_CATEGORIES = 'GET_CATEGORIES';
+export const GET_EVENTS = 'GET_EVENTS';
+export const GET_EVENTS_TODAY = 'GET_EVENTS_TODAY';
+export const GET_EVENTS_CATEGORY = 'GET_EVENTS_CATEGORY';
+export const GET_CATEGORY_DETAILS = 'GET_CATEGORY_DETAILS';
+export const GET_EVENTS_UPCOMING = 'GET_EVENTS_UPCOMING';
+export const GET_EVENT_DETAIL = 'GET_EVENT_DETAIL';
+export const GET_EVENT_TITLE = 'GET_EVENT_TITLE';
+export const LOGIN = 'LOGIN';
+export const USER_DETAIL = 'USER_DETAIL';
+export const ADD_EVENT = 'ADD_EVENT';
+export const ADD_ORDER_EVENT = 'ADD_ORDER_EVENT';
+export const GET_ORDER_PENDING = 'GET_ORDER_PENDING';
+export const GET_PENDING_ORDER = 'GET_PENDING_ORDER';
+export const GET_PENDING = 'GET_PENDING';
+export const GET_APPROVED = 'GET_APPROVED';
